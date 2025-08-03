@@ -342,7 +342,7 @@ async def main():
 
 
 if __name__ == "__main__":
-    print("Starting scrape_item_details_v2.py script...")
+    print("Starting scrape_item_details.py script...")
     try:
         print("Initializing asyncio...")
         asyncio.run(main())
