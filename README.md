@@ -202,9 +202,12 @@ The NC ABC Spirits Inventory Power BI report provides comprehensive analysis and
 
 ### 1. Spirit Summary
 A high-level dashboard providing key metrics and overview statistics of the NC ABC spirits inventory, including total products, prices, and categories.
+![Spirit Summary](images/spirit_summary.png)
 
 ### 2. Detail Report
 A comprehensive data table view allowing users to explore individual spirit records with all available fields including pricing, specifications, and product images.
+![Detail Report](images/detail_report.png)
 
 ### 3. Spirit Comparison
 An interactive comparison tool enabling side-by-side analysis of different spirits based on pricing, proof, age, and other characteristics.
+![Spirit Comparison](images/spirit_comparison.png)
