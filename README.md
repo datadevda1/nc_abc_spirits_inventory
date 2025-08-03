@@ -130,20 +130,22 @@ The pipeline consists of four main scripts that work together to collect, proces
 ## Apache Airflow Pipeline Flow
 
 ```
-1. scrape_pricing_site.py
+1. scrape_pricing_data (scrape_pricing_site.py)
    ↓ (Extracts pricing list and item URLs)
-2. scrape_item_details.py
+2. scrape_item_details (scrape_item_details.py)
    ↓ (Enriches with detailed product information)
-3. replace_missing_urls.py
+3. replace_missing_images (replace_missing_urls.py)
    ↓ (Adds images via Google Custom Search API)
-4. replace_x_image_urls.py
+4. replace_x_images (replace_x_image_urls.py)
    ↓ (Final image cleanup using Google Custom Search API)
    → Refreshes the Power BI Report
 ```
 
+
 ## DAG Orchestration
 
 The pipeline is orchestrated using Apache Airflow through the DAG file located at `{$HOME}/airflow/dags/abc_liquor_inventory_pipeline_dag.py`.
+
 
 ### DAG Configuration
 
@@ -174,6 +176,8 @@ The DAG consists of four sequential tasks that correspond to the pipeline script
    - Final task in the pipeline
    - Extracts remaining images from ABC website
    - Completes the dataset for Power BI consumption
+
+![Apache Airflow DAG](images/airflow_screenshot.png)
 
 ### Task Dependencies
 
