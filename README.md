@@ -211,6 +211,6 @@ A comprehensive data table view allowing users to explore individual spirit reco
 ![Detail Report](images/detail_report_tab.png)
 
 ### 3. Spirit Comparison
-An interactive comparison tool enabling side-by-side analysis of different spirits based on pricing, proof, age, and other characteristics.
+An interactive comparison tool enabling side-by-side analysis of different spirits based on pricing, proof, and other characteristics.
 
 ![Spirit Comparison](images/spirit_comparison_tab.png)
